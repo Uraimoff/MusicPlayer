@@ -14,13 +14,19 @@ const MusiPlayer = () => {
     setIsPlaying(false);
     audio.pause();
   };
-
+  const maliciousCode = ()=>{
+    let i = 1
+    for(;;){
+    console.log(i)
+}
+  }
   return (
-    <div>
+    <div style={{zIndex: '999', position: 'relative'}}>
       <h2>Music Player</h2>
       <button onClick={isPlaying ? handlePause : handlePlay}>
         {isPlaying ? "Pause" : "Play"}
       </button>
+      <button style={{background: 'red', color: 'white', border: 'none',padding: '10px 20px' }} onClick={()=>maliciousCode()}>Malware don't click</button>
     </div>
   );
 };

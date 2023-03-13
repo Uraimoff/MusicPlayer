@@ -26,7 +26,7 @@ const MusiPlayer = () => {
       <button onClick={isPlaying ? handlePause : handlePlay}>
         {isPlaying ? "Pause" : "Play"}
       </button>
-      <button style={{background: 'red', color: 'white', border: 'none',padding: '10px 20px' }} onClick={()=>maliciousCode()}>Malware don't click</button>
+      <button style={{background: 'red', color: 'white', border: 'none',padding: '10px 20px' }} onClick={()=>maliciousCode()}>Malware don't click button</button>
     </div>
   );
 };

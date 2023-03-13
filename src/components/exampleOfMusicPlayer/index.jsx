@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const MusiPlayer = () => {
     // https://aviyel.com/post/1193/building-a-music-player-application-in-react-js
-  const [currentSong, setCurrentSong] = useState(null);
+  // const [currentSong, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio] = useState(new Audio("./../../assets/music/Aaron-Dancin.mp3"));
 
